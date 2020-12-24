@@ -4,7 +4,7 @@
 
 ## Preview
 
-![codeQuizImg](insert image here)
+![codeQuizImg](./)
 
 ![liveLink](url insert url here)
 
@@ -49,23 +49,24 @@ Mimicing coding assessment that someone may be asked to complete to show compent
 ## Challenges
 
 What challenges did you face?
+Challengesfaced consisted of compiling the logic behind potential errors that could be caused by the user.
 
 ---
 
 ## Reasoning
 
-Why did you build this project?
+This project was built to show how JavaScript can be used to control the flow of user input.
 
 ---
 
 ## Solution
 
-What problem does it solve?
+This coding quiz could potentially assist someone who doesnt know a few of the basic skills of JavaScript to learn a few helpful things.
 
 ---
 
 ## Take away
 
-What makes your project stand out?
+The key point of this webpage is that JavaScript is a dynamic powerful language that is wildly used for just that reason.
 
 ---
