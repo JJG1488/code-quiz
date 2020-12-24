@@ -4,9 +4,9 @@
 
 ## Preview
 
-![codeQuizImg](./)
+![codeQuizImg](./assets/images/code-quiz.png)
 
-![liveLink](url insert url here)
+![liveLink](https://jjg1488.github.io/code-quiz/)
 
 ---
 
