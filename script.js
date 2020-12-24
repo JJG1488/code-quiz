@@ -89,31 +89,7 @@ nextButton.addEventListener('click', function() {
 // --------------------------------------------------------------------------------
 //                             FUNCTIONS    
 // --------------------------------------------------------------------------------
-
-function saveHighscore() {
-    var initials = initialsEl.value.trim();
-    console.log(initials);
-    var highScores = JSON.parse(window.localStorage.getItem("highScores")) || []
   
-  
-    var userScore = {
-      score: time,
-      initials: initials,
-  
-    }
-    highScores.push(userScore);
-    window.localStorage.setItem("highScores", JSON.stringify(highScores));
-  
-    window.location.href = "./highscore.html";
-  
-  };
-  
-  
-  // user clicks button to submit initials
-  submitBtn.onclick = saveHighscore;
-  
-  // user clicks button to start quiz
-  startBtn.onclick = start;
 // created a function to start the game
 function startGame() {
 // sets a timer for the game 
@@ -173,6 +149,7 @@ answerButtons.appendChild(button);
 
 }
 
+// This function reset the body
 function reset() {
     
     clear(document.body);
@@ -225,7 +202,7 @@ function clear(element) {
 
 // function that sets the time
 function setTime() {
-    var secondsLeft = 60;
+    var secondsLeft = 10;
 
     // sets the "setInterval" function to the "timerInterval" variable
     var timerInterval = setInterval(function() {
