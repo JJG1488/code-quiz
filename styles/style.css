@@ -1,72 +1,45 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
 }
 
-
- body {
-    background-color: grey;
-    padding: 0%;
-    margin: 0%;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+#question-container {
+  min-width: 50%;
+  min-height: 50%;
+  max-width: 70%;
+  max-height: 50%;
+  background-color: brown;
+  float: right;
 }
 
-body.correct {
-    background-color: green;
+#controls {
+  min-width: 400px;
+  min-height: 400px;
+  background-color: white;
 }
 
-body.wrong {
-    background-color: red;
-}
-
-.container {
-    background-color: whitesmoke;
-    width: 500px;
-    padding: 10px;
-    max-width: 500px;
-}
-
-.btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.btn {
-    background-color: crimson;
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: cyan;
-    outline: none;
-}
-
-
-.btn.correct {
-    background-color: forestgreen;
-
-} 
-
-.btn.wrong {
-    background-color: darkred;
-}
-
-.start-btn, .next-btn {
-    font-size: 2.0;
-    font-weight: bold;
-    padding: 10px 20px;
-}
-
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#score-card {
+  min-width: 30%;
+  min-height: 30%;
+  max-width: 30%;
+  max-height: 50%;
+  background-color: orange;
+  float: left;
 }
 
 .hide {
-    display: none;
-} 
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#start-btn {
+  margin-left: 50%;
+  margin-right: 50%;
+  min-width: 10%;
+  min-height: 10%;
+}

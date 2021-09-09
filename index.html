@@ -1,49 +1,67 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
 
-</head>
+  <body>
+    <div id="score-card" class="score-card">
+      SCORE:
 
+      <span id="view-score">0</span>
 
+      <br />
 
-<body>
-   
+      TIME:
+
+      <div id="time">0</div>
+    </div>
 
     <div class="container">
+      <div id="question-container" class="question-container">
+        <div id="questionOne">Question</div>
+        <hr>
+        <input type="text" class="submit" id="userInput" value="">
+        <button type="submit" id="submit">Submit</button>
 
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button type="button" class="btn hide" id="buttonOne">
+            1. Button
+          </button>
 
-            <div id="answer-buttons" class="btn-grid">
-                <button type="button" class="btn">1. Button</button>
-                <button type="button" class="btn">2. Button</button>
-                <button type="button" class="btn">3. Button</button>
-                <button type="button" class="btn">4. Button</button>
-            </div>
+          <button type="button" class="btn hide" id="buttonTwo">
+            2. Button
+          </button>
 
+          <!-- <button type="button" class="btn">3. Button</button>
+          <button type="button" class="btn">4. Button</button> -->
         </div>
+      </div>
 
-        <div class="controls">
-            <button type="button" id="start-btn" class="start-btn btn">Start</button>
-            <button type="button" id="next-btn" class="next-btn hide">Next</button>
-            <input type="reset" id="reset" class="reset-btn hide" value="Reset">
-        </div>
-    </div>
-        
-    <div class="score-card">
-        SCORE: <span id="view-highscores">0</span>
-        <br>
-        TIME: <span id="time">0</span>
-        
+      <div id="controls" class="controls">
+        <button type="button" id="start-btn" class="start-btn btn">
+          Start Quiz
+        </button>
+
+        <!-- <button type="button" id="next-btn" class="next-btn">Next</button> -->
+
+        <!-- <button type="button" id="reset-btn" class="reset-btn">Reset</button> -->
+      </div>
     </div>
 
-
-    <script src="script.js"></script>
-</body>
-
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
+
+<!-- var questions = [
+{question: 'What is JavaScript?',answers: [{ text: 'HyperText Markup Langauge', correct: false },{ text: 'Scripting Language', correct: true },]},
+{question: 'What is a function?',answers: [{ text: 'Reusable Block Of Code', correct: true },{ text: 'Nothing Useful', correct: false }]},
+{question: 'What is an object in JavaScript?',answers: [{ text: 'Water-like substance used for cooking', correct: false },{ text: 'A way to communicate things and what they do in JavaScript', correct: true }]},
+{question: 'What is an expressive function?',answers: [{ text: 'A function stored in a variable', correct: true },{ text: 'An integer that should be parsed', correct: false }]},
+{question: 'Is JavaScript fun?',answers: [{ text: 'Yes', correct: true },{ text: 'No', correct: false }]},
+{question: 'How do you declare a variable?',answers: [{ text: 'var nameOfVariable = value', correct: true },{ text: 'variable = true and/ or false', correct: false }]}
+] -->
