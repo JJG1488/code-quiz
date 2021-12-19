@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
 
-  <body>
-    <div id="score-card" class="score-card">
-      SCORE:
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Quiz</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
 
-      <span id="view-score">0</span>
-
-      <br />
-
-      TIME:
-
-      <div id="time">0</div>
+<body>
+  <div class="score-card-container">
+    <div class="score-card">
+      <h2>TIME:</h2>
+      <p class="time" id="time">0</p>
     </div>
-
-    <div class="container">
-      <div id="question-container" class="question-container">
-        <div id="questionOne">Question</div>
-        <hr>
-        <input type="text" class="submit" id="userInput" value="">
-        <button type="submit" id="submit">Submit</button>
-
-        <div id="answer-buttons" class="btn-grid">
-          <button type="button" class="btn hide" id="buttonOne">
-            1. Button
-          </button>
-
-          <button type="button" class="btn hide" id="buttonTwo">
-            2. Button
-          </button>
-
-          <!-- <button type="button" class="btn">3. Button</button>
-          <button type="button" class="btn">4. Button</button> -->
-        </div>
-      </div>
-
-      <div id="controls" class="controls">
-        <button type="button" id="start-btn" class="start-btn btn">
-          Start Quiz
-        </button>
-
-        <!-- <button type="button" id="next-btn" class="next-btn">Next</button> -->
-
-        <!-- <button type="button" id="reset-btn" class="reset-btn">Reset</button> -->
+    <br>
+    <div class="score-card-container">
+      <div class="score-card">
+        <h2>SCORE:</h2>
+        <p class="view-score" id="score-card">0</p>
       </div>
     </div>
+  </div>
 
-    <script src="./scripts/script.js"></script>
-  </body>
+  <div class="container">
+    <div class="question-container">
+      <h4 class="question">Ready?...Press "Start Quiz" to play</h4>
+      <hr>
+      
+
+      <div class="answer-buttons" class="btn-grid">
+      </div>
+      <form class="hidden">
+        <label for="A">A</label>
+        <input type="radio" class="btn" name="answer" id="A" value="A">
+
+        <label for="B">B</label>
+        <input type="radio" class="btn" name="answer" id="B" value="B">
+
+        <label for="C">C</label>
+        <input type="radio" class="btn" name="answer" id="C" value="C">
+
+        <label for="D">D</label>
+        <input type="radio" class="btn" name="answer" id="D" value="D">
+        <br>
+
+        <!-- <input type="submit" value="" class="submit-btn" id="form-submit-button">Submit -->
+
+
+      <button type="submit" class="submit-btn" id="form-submit-button" value="answer.value">Submit</button>
+      </form>
+
+      <pre id="log">
+        </pre>
+
+    </div>
+
+    <div class="controls">
+      <button type="button" class="start-btn" onclick="startGame()">
+        Start Quiz
+      </button>
+      <!-- <button type="button" class="next-btn">Next Question</button> -->
+      <button type="button" class="reset-btn">Reset Questions</button>
+    </div>
+  </div>
+
+  <script src="./scripts/script.js"></script>
+</body>
+
 </html>
 
 <!-- var questions = [
