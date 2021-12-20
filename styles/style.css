@@ -35,16 +35,19 @@ body {
 
 .container {
   display: grid;
-  height: 20rem;
+  height: 30rem;
   width: 40rem;
   margin: 10rem auto;
 }
+h4.question, form {
+  margin: auto;
 
+}
 .question-container {
   display: grid;
   border: solid white 1rem;
   border-radius: 1rem;
-  height: 20rem;
+  height: 30rem;
   width: 0 auto;
   justify-content: center;
   align-content: center;
@@ -53,12 +56,13 @@ body {
 }
 .answer-buttons {
   display: grid;
-  margin: 1rem auto;
+  width: 40rem;
+  height: 10rem;
+  margin: 2rem 2rem;
 }
 
 .controls {
-  /* border: solid green 1rem; */
-  margin-top: 2rem;
+  margin-top: .5rem auto;
   display: flex;
 }
 

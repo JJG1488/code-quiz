@@ -21,11 +21,11 @@ let gameQuestions = [
                 correct: false
             },
             {
-                text: 'C: Scripting Language',
-                correct: true
+                text: 'C: Pretty Language',
+                correct: false
             },
             {
-                text: 'D: HyperText Markup Language',
+                text: 'D: CalmText Markup Language',
                 correct: false
             }
         ]
@@ -47,7 +47,7 @@ let gameQuestions = [
             },
             {
                 text: "D: All of JavaScript values, except primers, are objects.",
-                correct: true
+                correct: false
             }
         ]
     },
@@ -55,19 +55,19 @@ let gameQuestions = [
         question: "What are higher order functions?",
         answer: [
             {
-                text: "A higher order function runs out of time when executed",
-                correct: true
-            },
-            {
-                text: "functions that are placed higher in the program than others",
+                text: "A: A higher order function runs out of time when executed",
                 correct: false
             },
             {
-                text: "functions that have to return values higher than other function return values",
+                text: "B: functions that are placed higher in the program than others",
                 correct: false
             },
             {
-                text: "A higher order function is a function that takes a function as an argument, or returns a function",
+                text: "C: functions that have to return values higher than other function return values",
+                correct: false
+            },
+            {
+                text: "D: A higher order function is a function that takes a function as an argument, or returns a function",
                 correct: true
             },
 
@@ -167,6 +167,7 @@ const lastQuestion = () => {
             if (answer[i].checked) {
                 if (answer[i].value === 'D') {
                     alert('Correct!')
+                    score+= 1
                     scoreCard += score + 1;
 
                 } else {
@@ -174,7 +175,8 @@ const lastQuestion = () => {
                 }
             }
         }
-        return document.querySelector('h4.question').innerHTML = score + 'is your final score';
+        alert('Game Over');
+        alert('Your final score was: ' + score)
     }
 }
 
